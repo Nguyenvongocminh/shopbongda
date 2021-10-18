@@ -47,20 +47,20 @@ const Login = () => {
               <label>Tên đăng nhập</label>
               <br />
               <Input
-                placeholder="Username"
+                placeholder="Tên đăng nhập"
                 className="inputText"
                 value={username}
-                onChange={(e) => handleChange(e, "username")}
+                onChange={(e) => handleChange(e, "Tên đăng nhập")}
               />
               <br />
               <label style={{ marginTop: "10px" }}>Mật khẩu</label>
               <br />
               <Input
-                placeholder="Password"
+                placeholder="mật khẩu"
                 type="password"
                 className="inputText"
                 value={password}
-                onChange={(e) => handleChange(e, "password")}
+                onChange={(e) => handleChange(e, "Mật khẩu")}
               />
               <br />
               <Button color="green" onClick={onLogin}>

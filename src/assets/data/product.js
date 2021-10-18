@@ -42,7 +42,7 @@ const data = [
 {
     id: 6,
     name: 'Áo Manchester City',
-    image: 'https://www.goalinn.com/f/13810/138102179/adidas-fc-bayern-munich-21-22-away-shirt.jpg',
+    image: 'https://file.hstatic.net/200000290829/file/man-city-21-22-kit__2__47245f62ac7042ceb329229fc6e749af_grande.jpg',
     brand: 'Puma',
     price: 190000,
     chip: 'Vải Fake 1'
@@ -63,6 +63,71 @@ const data = [
     price: 140000,
     chip: 'Vải gai thường'
 },
+{
+id: 1,
+name: 'Áo 	Tottenham Hotspur',
+image: 'https://vietnam9.net/wp-content/uploads/2020/10/Ao-tottenham-san-nha-1-1.jpg',
+brand: 'Nike',
+price: 200000,
+chip: 'vải trơn'
+},
+{
+id: 2,
+name: 'Áo Arsenal',
+image: 'https://product.hstatic.net/200000025394/product/ao_djau_san_nha_arsenal_20_21_burgundy_eh5817_01_laydown_f16db1b683834f008cc2e2f530211d42_master.jpg',
+brand: 'Nike',
+price: 210000,
+chip: 'Vải gai thường'
+},
+{
+id: 3,
+name: 'Áo Paris Saint Germain',
+image: 'https://file.hstatic.net/200000290829/file/psg-21-22-kit-home__3__2feb59ba26b04227b83c3c24c32b0f6f_grande.jpg',
+brand: 'Kappa',
+price: 230000,
+chip: 'Vải Fake 1'
+},
+{
+id: 4,
+name: 'Áo Atletico Madrid ',
+image: 'https://product.hstatic.net/1000194662/product/42116609_545724099214871_3825573945172557824_n_f003214a9cbf488a9ae2fb03d4e45c3b.jpg',
+brand: 'Kappa',
+price: 240000,
+chip: 'Vải thun lạnh 4 chiều'
+},
+{
+id: 5,
+name: 'Áo Borussia Dortmund',
+image: 'https://cf.shopee.vn/file/81dad7a071bb6c9c0be60334567b99d6',
+brand: 'Puma',
+price: 290000,
+chip: 'Vải thun lạnh 4 chiều'
+},
+{
+id: 6,
+name: 'Áo Bayern Munchen',
+image: 'https://www.sporter.vn/wp-content/uploads/2019/07/Ao-bayern-mau-ba-1-400x400.jpg',
+brand: 'Puma',
+price: 290000,
+chip: 'Vải Fake 1'
+},
+{
+id: 7,
+name: 'Áo Sporting CP',
+image: 'https://1.bp.blogspot.com/-_v_-PuAGCx0/YQhazVI2vaI/AAAAAAADKZ4/xca6sV9nK_UIgsm05oug0ZMYbG6fZJd_gCNcBGAsYHQ/s1000/sporting-21-22-kit-third%2B%25281%2529.png',
+brand: 'DKS',
+price: 330000,
+chip: 'vải trơn'
+},
+{
+id: 8,
+name: 'Áo RB Leipzig',
+image: 'https://product.hstatic.net/200000022804/product/z1775908036574_fc0b8d2d0f87d117b5ae9cdb7b0ef5f2_dd7cde86cc8042e88ac3b981407efb6a_master.jpg',
+brand: 'DKS',
+price: 340000,
+chip: 'Vải gai thường'
+},
+
 ];
 
 export default data;

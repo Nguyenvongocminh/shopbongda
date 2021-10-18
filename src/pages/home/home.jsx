@@ -3,14 +3,17 @@ import Navbar from '../../components/navbar/navbar'
 import Card from '../../components/card/card';
 import product from '../../assets/data/product';
 import {  useState, useEffect } from 'react';
-import { Input, Icon } from 'semantic-ui-react'
+import { Input, Icon,Pagination } from 'semantic-ui-react'
 
 function Home() {
   const [data, setData] = useState([]);
 
-  const [search, setSearch] = useState('')
-  const [price, setPrice] = useState('')
-  const [brand, setBrand] = useState('')
+  const [search, setSearch] = useState('');
+  const [price, setPrice] = useState('');
+  const [brand, setBrand] = useState('');
+  const [pageNumber, setPageNumber] = useState(1);
+  const [totalPage, setTotalPage] = useState(0);
+  const [loading, setLoading] = useState(false);
 
 
   const fetchData = async () => {
@@ -40,7 +43,7 @@ function Home() {
     setBrand(e.target.value);
     setData(
       product.filter((item) =>
-        item?.name?.toLowerCase()?.includes(e.target.value.toLowerCase())
+        item?.brand?.toLowerCase()?.includes(e.target.value.toLowerCase())
     )
     );
   };
@@ -57,8 +60,6 @@ function Home() {
       ) 
     }
   }
-
-
   return (
 
     <div className="home-container">
@@ -87,7 +88,7 @@ function Home() {
             <option value="2">Từ cao đến thấp</option>
           </select>
         </div>
-       <img src="https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2021/8/30/photo1630305337256-1630305337442104252003.jpg" alt="cr7" width="250px" height="500px" />
+       <img src="https://cafebiz.cafebizcdn.vn/thumb_w/600/162123310254002176/2021/8/30/photo1630305337256-1630305337442104252003.jpg" alt="cr7" width="200px" height="300px" />
       </div>
       <div className="product">
         {data.map((item) => (
@@ -95,7 +96,11 @@ function Home() {
         ))};
       </div>
       <div className="menuRight"></div>
+      <div className="paginator">
+    
+      </div>
     </div>
+    
   );
 }
 
