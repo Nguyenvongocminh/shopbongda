@@ -3,7 +3,8 @@ import Navbar from '../../components/navbar/navbar'
 import Card from '../../components/card/card';
 import product from '../../assets/data/product';
 import {  useState, useEffect } from 'react';
-import { Input, Icon,Pagination } from 'semantic-ui-react'
+import { Input, Icon,Pagination } from 'semantic-ui-react';
+import Footer from '../footer/footer';
 
 function Home() {
   const [data, setData] = useState([]);
@@ -61,7 +62,7 @@ function Home() {
     }
   }
   return (
-
+    <div className="boc">
     <div className="home-container">
       <Navbar />
       <div className="menuLeft">
@@ -97,8 +98,11 @@ function Home() {
       </div>
       <div className="menuRight"></div>
       <div className="paginator">
-    
+     
       </div>
+    </div>
+      <hr style={{ width: "80%" }} />
+      <Footer/>
     </div>
     
   );
